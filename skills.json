@@ -1,0 +1,37 @@
+[
+  {
+    "name": "github-pr-review",
+    "title": "GitHub PR Review",
+    "category": "developer-tools",
+    "description": "Review a GitHub pull request and summarize changes",
+    "version": "1.0.0"
+  },
+  {
+    "name": "web-search",
+    "title": "Web Search",
+    "category": "developer-tools",
+    "description": "Search the web and return structured results",
+    "version": "1.0.0"
+  },
+  {
+    "name": "cve-scanner",
+    "title": "CVE Scanner",
+    "category": "security",
+    "description": "Scan a package list for known CVE vulnerabilities",
+    "version": "1.0.0"
+  },
+  {
+    "name": "csv-transform",
+    "title": "CSV Transform",
+    "category": "data-etl",
+    "description": "Transform a CSV file using a natural language description",
+    "version": "1.0.0"
+  },
+  {
+    "name": "send-email",
+    "title": "Send Email",
+    "category": "communication",
+    "description": "Send a composed email via SMTP",
+    "version": "1.0.0"
+  }
+]
