@@ -88,20 +88,23 @@ This standalone snippet demonstrates a keyboard-operable flow highlight using in
 <style>
   body { font: 16px system-ui, sans-serif; color: #17233b; }
   button { padding: .6rem .9rem; border: 1px solid #5268d8; border-radius: .5rem; background: white; color: #253d9b; }
-  button:focus-visible { outline: 3px solid #f0a52b; outline-offset: 3px; }
+  button:focus-visible { outline: 3px solid #253d9b; outline-offset: 3px; }
+  .diagram-scroll { max-width: 100%; overflow-x: auto; }
+  .diagram-scroll:focus-visible { outline: 3px solid #253d9b; outline-offset: 3px; }
   .flow { stroke: #72809a; stroke-width: 3; }
   .flow.active { stroke: #3155d9; stroke-width: 6; }
   .node { fill: #edf1fa; stroke: #71809b; stroke-width: 2; }
   text { font: 16px system-ui, sans-serif; fill: #17233b; }
 </style>
 <button id="toggle" type="button" aria-pressed="false" aria-controls="diagram">Highlight data flow</button>
-<svg id="diagram" role="img" aria-labelledby="title desc" viewBox="0 0 560 150" width="100%">
+<div class="diagram-scroll" tabindex="0" role="region" aria-label="Scrollable order data flow diagram">
+<svg id="diagram" role="img" aria-labelledby="title desc" viewBox="0 0 560 150" width="560" height="150">
   <title id="title">Order data flow</title>
   <desc id="desc">The order service sends order records to the analytics platform.</desc>
-  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"/></marker></defs>
+  <defs><marker id="arrow" viewBox="0 0 12 8" markerWidth="12" markerHeight="8" refX="12" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,4 L0,8 z" fill="context-stroke"/></marker></defs>
   <rect class="node" x="20" y="45" width="180" height="60" rx="12"/>
   <text x="110" y="81" text-anchor="middle">Order service</text>
-  <path class="flow" d="M200 75 H350" marker-end="url(#arrow)"/>
+  <path class="flow" d="M200 75 H348" marker-end="url(#arrow)"/>
   <text x="275" y="58" text-anchor="middle">order records</text>
   <rect class="node" x="350" y="45" width="190" height="60" rx="12"/>
   <text x="445" y="81" text-anchor="middle">Analytics platform</text>
