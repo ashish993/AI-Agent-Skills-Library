@@ -27,5 +27,11 @@ Complete list of available skills organized by category.
 |-------|-------------|
 | [send-email](skills/send-email/SKILL.md) | Send a composed email via SMTP |
 
+## Content
+
+| Skill | Description |
+|-------|-------------|
+| [interactive-data-diagram-presentation](skills/interactive-data-diagram-presentation/SKILL.md) | Turn supplied evidence into an interactive, self-contained HTML presentation with accessible inline SVG |
+
 ---
 *Add your skill via pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).*
