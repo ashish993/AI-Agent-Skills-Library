@@ -33,5 +33,12 @@
     "category": "communication",
     "description": "Send a composed email via SMTP",
     "version": "1.0.0"
+  },
+  {
+    "name": "interactive-data-diagram-presentation",
+    "title": "Interactive Data Diagram Presentation",
+    "category": "content",
+    "description": "Turn supplied business, analytics, or architecture evidence into an interactive, self-contained HTML presentation with accessible inline SVG.",
+    "version": "1.0.0"
   }
 ]
